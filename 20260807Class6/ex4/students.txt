@@ -1,0 +1,7 @@
+Smith 27 35.0
+Jones 21 28.35
+Walker 96 182.4
+Doe 60 150
+Kumar 45 70
+Brown 75 140
+David 20 40

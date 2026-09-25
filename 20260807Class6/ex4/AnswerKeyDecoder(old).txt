@@ -1,0 +1,57 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class AnswerKeyDecoder {
+    public static void main(String[] args) {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.print("Enter file path for CodedAnswerKey: ");
+        String filePath = inputScanner.nextLine();
+
+        String answers = "";
+
+        try {
+            Scanner fileScanner = new Scanner(new File(filePath));
+            while (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine().trim();
+                if (line.matches("[a-fA-F]")) {
+                    answers += line;
+                }
+            }
+            fileScanner.close();
+
+            System.out.println("Coded Answers: " + answers);
+            System.out.println("Decoded Final Answers: " + finalAnswers(answers));
+
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+        } finally {
+            inputScanner.close();
+        }
+    }
+
+    public static String finalAnswers(String answers) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < answers.length(); i++) {
+            char c = answers.charAt(i);
+            switch (c) {
+                case 'e':
+                    sb.append('b');
+                    break;
+                case 'E':
+                    sb.append('A');
+                    break;
+                case 'f':
+                    sb.append('c');
+                    break;
+                case 'F':
+                    sb.append('D');
+                    break;
+                default:
+                    sb.append(c);
+                    break;
+            }
+        }
+        return sb.toString().toLowerCase();
+    }
+}

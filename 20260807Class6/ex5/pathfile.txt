@@ -1,0 +1,17 @@
+"D:\2024506092\20260807Class6\ex5\Program1.java"
+"D:\2024506092\20260807Class6\ex5\Program2.java"
+"D:\2024506092\20260807Class6\ex5\Program3.java"
+"D:\2024506092\20260807Class6\ex5\Program4.java"
+"D:\2024506092\20260807Class6\ex5\Program5.java"
+
+java Program1
+java Program2
+java Program3
+java Program4
+java Program5
+
+javac Program1.java
+javac Program2.java
+javac Program3.java
+javac Program4.java
+javac Program5.java

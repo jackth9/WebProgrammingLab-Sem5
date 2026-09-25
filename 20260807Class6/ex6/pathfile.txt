@@ -1,0 +1,14 @@
+"D:\2024506092\20260807Class6\ex6\Q1.java"
+"D:\2024506092\20260807Class6\ex6\Q2.java"
+"D:\2024506092\20260807Class6\ex6\Q3.java"
+"D:\2024506092\20260807Class6\ex6\Q4.java"
+
+javac Q1.java
+javac Q2.java
+javac Q3.java
+javac Q4.java
+
+java Q1
+java Q2
+java Q3
+java Q4

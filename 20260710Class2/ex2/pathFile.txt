@@ -1,0 +1,23 @@
+"D:\2024506092\20260710Class2\ex2\SortList.java"
+"D:\2024506092\20260710Class2\ex2\ArrayListConversion.java"
+"D:\2024506092\20260710Class2\ex2\ArraySubset.java"
+"D:\2024506092\20260710Class2\ex2\FrequencyArray.java"
+"D:\2024506092\20260710Class2\ex2\LargestSmallest.java"
+"D:\2024506092\20260710Class2\ex2\ListIteration.java"
+"D:\2024506092\20260710Class2\ex2\MatrixAddition.java"
+"D:\2024506092\20260710Class2\ex2\MatrixMultiplication.java"
+"D:\2024506092\20260710Class2\ex2\MatrixTranspose.java"
+"D:\2024506092\20260710Class2\ex2\MergeSortedArrays.java"
+"D:\2024506092\20260710Class2\ex2\RemoveElement.java"
+
+java ArraySubset
+java LargestSmallest
+java FrequencyArray
+java MatrixAddition
+java MatrixMultiplication
+java MatrixTranspose
+java MergeSortedArrays
+java SortList 
+java RemoveElement
+java ListIteration
+java ArrayListConversion

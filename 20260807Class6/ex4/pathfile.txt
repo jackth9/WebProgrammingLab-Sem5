@@ -1,0 +1,25 @@
+"D:\2024506092\20260807Class6\ex4\AnswerKeyDecoder.java"
+"D:\2024506092\20260807Class6\ex4\Factorials.java"
+"D:\2024506092\20260807Class6\ex4\MathUtils.java"
+"D:\2024506092\20260807Class6\ex4\NameValidator.java"
+"D:\2024506092\20260807Class6\ex4\Warning.java"
+"D:\2024506092\20260807Class6\ex4\pathfile.txt"
+
+javac MathUtils.java
+javac Factorials.java
+javac Warning.java
+javac NameValidator.java
+javac DecodeAnswers.java
+javac FinalAnswerConversion.java
+
+java MathUtils
+java Factorials
+java Warning
+java NameValidator
+java DecodeAnswers
+java FinalAnswerConversion
+
+
+
+javac AnswerKeyDecoder(old).java
+java AnswerKeyDecode

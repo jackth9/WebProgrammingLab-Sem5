@@ -1,0 +1,10 @@
+lass 1 = ex0
+class 2 = ex1 & ex2
+class 3 = ex1 sign & ex3_1, supposed to get ex1 sign and i got
+class 4 = ex3_2ToEnd, supposed to get ex2 sign and i got 
+class 5 = , supposed to get ex3 sign but i did not
+class 6 = ex4 copied, ex5 copied, ex6 copied, ex7 copied
+class 7 = IDK i just was copying and compiling
+class 8 = I just wanted the class to end soon
+class 9 = Got ex4 correction
+class 10 = filled in ex9, ex10, ex11

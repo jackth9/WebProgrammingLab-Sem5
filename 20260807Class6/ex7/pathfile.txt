@@ -1,0 +1,20 @@
+"D:\2024506092\20260807Class6\ex7\Q1Client.java"
+"D:\2024506092\20260807Class6\ex7\Q1Server.java"
+"D:\2024506092\20260807Class6\ex7\Q2Client.java"
+"D:\2024506092\20260807Class6\ex7\Q2Server.java"
+"D:\2024506092\20260807Class6\ex7\Q3.java"
+"D:\2024506092\20260807Class6\ex7\Q4.java"
+
+javac Q1Client.java
+javac Q1Server.java
+javac Q2Client.java
+javac Q2Server.java
+javac Q3.java
+javac Q4.java
+
+java Q1Client
+java Q1Server
+java Q2Client
+java Q2Server
+java Q3
+java Q4
