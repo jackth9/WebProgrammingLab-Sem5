@@ -26,8 +26,7 @@ public class Q3 extends JPanel {
     private final List<Raindrop> raindrops = new ArrayList<>();
     private final Random random = new Random();
 
-    public static class RaindropSimulation {
-        static RaindropSimulation() {
+    public Q3() {
         setBackground(Color.BLACK);
         
         Timer timer = new Timer(20, e -> {
@@ -48,7 +47,7 @@ public class Q3 extends JPanel {
             }
             repaint();
         });
-        timer.start(); }
+        timer.start();
     }
 
     @Override
@@ -62,7 +61,7 @@ public class Q3 extends JPanel {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Raindrop Simulation");
-        RaindropSimulation panel = new RaindropSimulation();
+        Q3 panel = new Q3();
         frame.add(panel);
         frame.setSize(800, 600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

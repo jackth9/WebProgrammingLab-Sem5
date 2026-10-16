@@ -19,4 +19,12 @@ INSERT INTO products (name, price) VALUES
 ('Laptop', 850.00),
 ('Smartphone', 450.00),
 ('Headphones', 50.00),
-('Keyboard', 30.00);
+('Keyboard', 30.00),
+('Wireless Mouse', 25.00),
+('Gaming Monitor', 220.00),
+('Smartwatch', 180.00),
+('USB-C Hub', 35.00),
+('External SSD 1TB', 110.00),
+('Bluetooth Speaker', 65.00),
+('Web Camera', 45.00),
+('Gaming Chair', 150.00);

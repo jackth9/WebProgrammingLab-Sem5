@@ -20,7 +20,7 @@ public class Q4 extends JFrame {
 
     private Map<String, Double> ratesToUSD = new HashMap<>();
 
-    public CurrencyConverter() {
+    public Q4() {
         setTitle("Currency Converter");
         setLayout(new FlowLayout());
         setSize(400, 150);
@@ -62,7 +62,7 @@ public class Q4 extends JFrame {
 
                     resultLabel.setText(String.format("Converted Amount: %.2f %s", convertedAmount, to));
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(CurrencyConverter.this, "Please enter a valid numeric amount.", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(Q4.this, "Please enter a valid numeric amount.", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -72,6 +72,6 @@ public class Q4 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new CurrencyConverter();
+        new Q4();
     }
 }
