@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>Registration Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 40px;
+        }
+        .card {
+            width: 450px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #d9534f;
+        }
+        p {
+            color: #555555;
+            line-height: 1.5;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Registration Failed!</h2>
+        <p>An error occurred while saving your registration to the database. Please verify your details or database connectivity and try again.</p>
+
+        <h:link outcome="sportsRegistration.xhtml" value="Back to Registration Form" styleClass="back-link" />
+    </div>
+</body>
+</html>

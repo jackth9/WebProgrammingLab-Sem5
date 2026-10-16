@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>Registration Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 40px;
+        }
+        .card {
+            width: 450px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #28a745;
+        }
+        .details-table {
+            width: 100%;
+            margin: 20px 0;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .details-table td {
+            padding: 8px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .details-table td.label {
+            font-weight: bold;
+            color: #555555;
+            width: 40%;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Registration Successful!</h2>
+        <p>Thank you for registering for the Sports Event.</p>
+
+        <table class="details-table">
+            <tr>
+                <td class="label">Student Name:</td>
+                <td><h:outputText value="#{sportsRegistrationBean.studentName}" /></td>
+            </tr>
+            <tr>
+                <td class="label">Roll Number:</td>
+                <td><h:outputText value="#{sportsRegistrationBean.rollNumber}" /></td>
+            </tr>
+            <tr>
+                <td class="label">Department:</td>
+                <td><h:outputText value="#{sportsRegistrationBean.department}" /></td>
+            </tr>
+            <tr>
+                <td class="label">Sports Event:</td>
+                <td><h:outputText value="#{sportsRegistrationBean.sportsEvent}" /></td>
+            </tr>
+            <tr>
+                <td class="label">Contact Number:</td>
+                <td><h:outputText value="#{sportsRegistrationBean.contactNumber}" /></td>
+            </tr>
+        </table>
+
+        <h:link outcome="sportsRegistration.xhtml" value="Register Another Student" styleClass="back-link" />
+    </div>
+</body>
+</html>

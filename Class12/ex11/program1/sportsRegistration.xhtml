@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Sports Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 40px;
+        }
+        .form-container {
+            width: 450px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .form-table {
+            width: 100%;
+        }
+        .form-table td {
+            padding: 8px 4px;
+        }
+        .form-input, .form-select {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .error-msg {
+            color: #d9534f;
+            font-size: 12px;
+            display: block;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sports Event Registration</h2>
+        <h:form id="regForm">
+            <table class="form-table">
+                <!-- Student Name -->
+                <tr>
+                    <td><h:outputLabel for="studentName" value="Student Name:" /></td>
+                    <td>
+                        <h:inputText id="studentName" styleClass="form-input"
+                                     value="#{sportsRegistrationBean.studentName}"
+                                     required="true"
+                                     requiredMessage="Student Name is required." />
+                        <h:message for="studentName" styleClass="error-msg" />
+                    </td>
+                </tr>
+
+                <!-- Roll Number -->
+                <tr>
+                    <td><h:outputLabel for="rollNumber" value="Roll Number:" /></td>
+                    <td>
+                        <h:inputText id="rollNumber" styleClass="form-input"
+                                     value="#{sportsRegistrationBean.rollNumber}"
+                                     required="true"
+                                     requiredMessage="Roll Number is required."
+                                     validatorMessage="Roll Number must be numeric.">
+                            <f:validateRegex pattern="^[0-9]+$" />
+                        </h:inputText>
+                        <h:message for="rollNumber" styleClass="error-msg" />
+                    </td>
+                </tr>
+
+                <!-- Department -->
+                <tr>
+                    <td><h:outputLabel for="department" value="Department:" /></td>
+                    <td>
+                        <h:inputText id="department" styleClass="form-input"
+                                     value="#{sportsRegistrationBean.department}"
+                                     required="true"
+                                     requiredMessage="Department is required." />
+                        <h:message for="department" styleClass="error-msg" />
+                    </td>
+                </tr>
+
+                <!-- Sports Event -->
+                <tr>
+                    <td><h:outputLabel for="sportsEvent" value="Sports Event:" /></td>
+                    <td>
+                        <h:selectOneMenu id="sportsEvent" styleClass="form-select"
+                                         value="#{sportsRegistrationBean.sportsEvent}"
+                                         required="true"
+                                         requiredMessage="Please select a Sports Event.">
+                            <f:selectItem itemValue="" itemLabel="-- Select Sports Event --" noSelectionOption="true" />
+                            <f:selectItem itemValue="Cricket" itemLabel="Cricket" />
+                            <f:selectItem itemValue="Football" itemLabel="Football" />
+                            <f:selectItem itemValue="Basketball" itemLabel="Basketball" />
+                            <f:selectItem itemValue="Athletics" itemLabel="Athletics" />
+                        </h:selectOneMenu>
+                        <h:message for="sportsEvent" styleClass="error-msg" />
+                    </td>
+                </tr>
+
+                <!-- Contact Number -->
+                <tr>
+                    <td><h:outputLabel for="contactNumber" value="Contact Number:" /></td>
+                    <td>
+                        <h:inputText id="contactNumber" styleClass="form-input"
+                                     value="#{sportsRegistrationBean.contactNumber}"
+                                     required="true"
+                                     requiredMessage="Contact Number is required."
+                                     validatorMessage="Contact Number must be a valid numeric value.">
+                            <f:validateRegex pattern="^[0-9]+$" />
+                        </h:inputText>
+                        <h:message for="contactNumber" styleClass="error-msg" />
+                    </td>
+                </tr>
+
+                <!-- Submit Button -->
+                <tr>
+                    <td colspan="2">
+                        <h:commandButton value="Register" action="#{sportsRegistrationBean.register}" styleClass="btn-submit" />
+                    </td>
+                </tr>
+            </table>
+        </h:form>
+    </div>
+</body>
+</html>
